@@ -1,0 +1,40 @@
+create database Student;
+
+use Student;
+
+create table tblParents (parent_id int,parents_name varchar(20),city varchar(20),age int,Annual_income int,occupation varchar(20),Emailid varchar(50)
+);
+
+INSERT INTO tblparents (parent_id, parents_name, city, age, annual_income,occupation,emailid)
+VALUES
+    (1, 'Mihir Jaiswal', 'Bangalore', 35, 600000, 'Engineer', 'jaiswal232@gmail.com'),
+    (2, 'Mukesh Maurya', 'Delhi', 28, 500000, 'Teacher', 'mm464@gmail.com'),
+    (3, 'Rajnish Bhardwaj', 'Chennai', 42, 820000, 'Doctor', 'rj567@gmail.com'),
+    (4, 'Nikita Singh', 'Bangalore', 31, 500000, 'Lawyer', 'nikitasingh@gmail.com'),
+    (5, 'Aman Singh', 'Bangalore', 38, 310000, 'Architect', 'singh@gmail.com'),
+    (6, 'Gulshan yadav', 'Delhi', 29, 250000, 'Graphic Designer', 'yadavg@gmail.com'),
+    (7, 'Amit Bind', 'Delhi', 45, 330000, 'Manager', 'bind@gmail.com'),
+    (8, 'Shubham Yadav', 'mumbai', 33, 300000, 'Marketing Specialist', 'yadav@gmail.com'),
+    (9, 'Aman jaiswal', 'Delhi', 36, 250000, 'Sales Representative', 'Aman@gmail.com'),
+    (10, 'Amar jaiswal', 'Ahmedabad', 27, 708000, 'Software Developer', 'jaiswal@gmail.com'),
+    (11, 'Dhiren garg', 'Mumbai', 39, 405000, 'Consultant', 'garg@gmail.com'),
+    (12, 'Raj Gupta', 'Mumbai', 30, 620000, 'Accountant', 'rajg@gmail.com'),
+    (13, 'Aman Gupta', 'Mumbai', 43, 750000, 'Engineer', 'Amangupta@gmail.com'),
+    (14, 'Sandhya Thakur', 'Ahmedabad', 32, 970000, 'Doctor', 'thakur@gmail.com'),
+    (15, 'Raghav Maurya', 'Delhi', 40, 308000, 'Lawyer', 'Maurya@gmail.com'),
+    (16, 'krishna', 'Chennai', 31, 480000, 'Architect', 'krishna@gmail.com'),
+    (17, 'Bipin Prajapati', 'mumbai', 44, 735000, 'Manager', 'bipin@gmail.com'),
+    (18, 'Rahul Yadav', 'Delhi', 34, 650000, 'Marketing Specialist', 'yadavr@gmail.com'),
+    (19, 'Saurabh Nishad', 'Mumbai', 37, 607000, 'Sales Representative', 'nsaurabh@gmail.com'),
+    (20, 'Amit Bind', 'Bangalore', 28, 800000, 'Software Developer', 'bind9530@gmail.com');
+
+select * from tblParents;
+
+update tblParents set emailid = 'NA' where parents_id >= 1;
+
+select count(*) from tblParents where annual_income > 700000
+
+select * from tblParents where city in ('Delhi','Mumbai','Chennai','Banglore');
+
+select * from Parents where annual_income>500000 || age>=45;
+
